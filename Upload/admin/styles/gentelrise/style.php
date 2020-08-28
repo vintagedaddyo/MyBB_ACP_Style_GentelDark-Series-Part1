@@ -580,7 +580,7 @@ EOF;
                 <div class="separator">
                     <br>
                     <h1>
-                        <i class="fa fa-paw"></i>
+                        <i class="fa fa-comments"></i>
                         Gentelrise!
                     </h1>
                     <p>Gentelella Style By: <a href="http://www.chack1172.altervista.org/?language=english">Chack1172</a>. <br /> Gentelrise Style By: <a href="http://community.mybb.com/user-6029.html">Vintagedaddyo</a>. <br /> Based On Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a></p>
@@ -645,7 +645,7 @@ EOF;
                 <div class="separator">
                     <br>
                     <h1>
-                        <i class="fa fa-paw"></i>
+                        <i class="fa fa-comments"></i>
                         Gentelrise!
                     </h1>
                     <p>Gentelella Style By: <a href="http://www.chack1172.altervista.org/?language=english">Chack1172</a>. <br /> Gentelrise Style By: <a href="http://community.mybb.com/user-6029.html">Vintagedaddyo</a>. <br /> Based On Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a></p>
