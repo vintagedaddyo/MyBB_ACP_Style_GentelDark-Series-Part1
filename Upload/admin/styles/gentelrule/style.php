@@ -81,8 +81,7 @@ class Page extends DefaultPage
 			echo "	<link rel=\"stylesheet\" href=\"styles/{$this->style}/{$this->active_module}.css\" type=\"text/css\" />\n";
 		}
 
-		echo "	<script type=\"text/javascript\" src=\"../jscripts/jquery.js?ver=1823\"></script>\n";
-		echo "<script>var $ = jQuery.noConflict;</script>\n";		
+		echo "	<script type=\"text/javascript\" src=\"../jscripts/jquery.js?ver=1823\"></script>\n";	
 		echo "	<script type=\"text/javascript\" src=\"../jscripts/jquery.plugins.min.js?ver=1821\"></script>\n";
 		echo "	<script type=\"text/javascript\" src=\"../jscripts/general.js?ver=1821\"></script>\n";
 		echo "	<script type=\"text/javascript\" src=\"./jscripts/admincp.js?ver=1821\"></script>\n";
@@ -107,8 +106,9 @@ class Page extends DefaultPage
 
        echo "<script>
             //<![CDATA[
+            var nprog = $.noConflict();
 	        NProgress.configure({ showSpinner: false });
-		    $(document).ready(function() {
+		    nprog(document).ready(function() {
 			NProgress.start();
 			NProgress.done();
 		    }); 

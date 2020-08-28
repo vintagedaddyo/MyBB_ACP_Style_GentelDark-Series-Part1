@@ -82,7 +82,7 @@ class Page extends DefaultPage
 		}
 
 		echo "	<script type=\"text/javascript\" src=\"../jscripts/jquery.js?ver=1823\"></script>\n";
-		echo "<script>var $ = jQuery.noConflict;</script>\n";		
+		//echo "<script>var $ = jQuery.noConflict;</script>\n";		
 		echo "	<script type=\"text/javascript\" src=\"../jscripts/jquery.plugins.min.js?ver=1821\"></script>\n";
 		echo "	<script type=\"text/javascript\" src=\"../jscripts/general.js?ver=1821\"></script>\n";
 		echo "	<script type=\"text/javascript\" src=\"./jscripts/admincp.js?ver=1821\"></script>\n";
@@ -101,22 +101,19 @@ class Page extends DefaultPage
                 "//]]>\n".
                 "</script>\n";
 
-       // ADD Progressbar
-       echo " <link rel=\"stylesheet\" href=\"styles/".$this->style."/progbar/nprogress.css\"/>\n";
-       echo" <script type=\"text/javascript\" src=\"styles/".$this->style."/progbar/nprogress.js\"></script>\n";
-
-       echo "<script>
+        // ADD Progressbar                      
+        echo " <link rel=\"stylesheet\" href=\"styles/".$this->style."/progbar/nprogress.css\"/>\n";
+        echo" <script type=\"text/javascript\" src=\"styles/".$this->style."/progbar/nprogress.js\"></script>\n";
+        echo "<script>
             //<![CDATA[
+            var nprog = $.noConflict();
 	        NProgress.configure({ showSpinner: false });
-		    $(document).ready(function() {
+		    nprog(document).ready(function() {
 			NProgress.start();
 			NProgress.done();
 		    }); 
 		    //]]>
-            </script>\n";
-
-
-
+            </script>\n"; 
 
 		echo "	<script type=\"text/javascript\">
 //<![CDATA[
@@ -580,7 +577,7 @@ EOF;
                 <div class="separator">
                     <br>
                     <h1>
-                        <i class="fa fa-comments"></i>
+                        <i class="fa fa-paw"></i>
                         Gentelrise!
                     </h1>
                     <p>Gentelella Style By: <a href="http://www.chack1172.altervista.org/?language=english">Chack1172</a>. <br /> Gentelrise Style By: <a href="http://community.mybb.com/user-6029.html">Vintagedaddyo</a>. <br /> Based On Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a></p>
@@ -645,7 +642,7 @@ EOF;
                 <div class="separator">
                     <br>
                     <h1>
-                        <i class="fa fa-comments"></i>
+                        <i class="fa fa-paw"></i>
                         Gentelrise!
                     </h1>
                     <p>Gentelella Style By: <a href="http://www.chack1172.altervista.org/?language=english">Chack1172</a>. <br /> Gentelrise Style By: <a href="http://community.mybb.com/user-6029.html">Vintagedaddyo</a>. <br /> Based On Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a></p>
